@@ -1,2 +1,21 @@
 # Responsive-Site
 - A good padding for buttons is 0.5em 1em. This makes it proportionally to the elements font size.
+- Common to set a margin-bottom to equal 1em.
+- Font Size with "em" is relative to the nearest ancestor.
+- Whilst padding/margin with em is relative
+- Compounding Issues With Font Sizes With Em:
+  - Nested elements with em can cause compounding effects. Changing one part of the nets can cause confusing CSS styling
+  - Can be fixed by using the rem unit.
+- rem stands for "Root em" and is always relative to the root <html> element. Calculate exactly same as em.
+- rem unit fixes any compounding effects.
+- line height is used to set the distance between lines of text.
+  - The recommended practice for responsive design is to set line height to a unitless value.
+  - A good rule of thumb is to set the line-height to 1.5 times the font-size of that element.
+  - Ex.) line-height: 1.5; is 150% larger than the font-size
+  - Ensures it always perserves this ratio in regards to the font-size
+- How to Decide What Units To Use:
+  - Font Sizes: Use rem units! No compounding effects and more predictable.
+  - Margin and Padding: Use em units! Proportional scaling and based on elements current font-size.
+  - Line Height: Unitless number values.
+  - Width: Use %. Flexible containers and flexible images.
+  - Max-Width: Use px to set a hardcoded max with. Easier to manage and ensures consistency over larger screen sizes.
